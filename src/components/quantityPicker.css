@@ -1,0 +1,41 @@
+.quantity-picker label{
+    margin: 0 5px;
+}
+
+.quantity-picker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-picker button{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    transition: background-color .25s ease-in-out;
+}
+
+.quantity-picker .btn-less{
+    background-color: #dadada;
+}
+
+.quantity-picker .btn-less:hover{
+    background-color: #b9b9b9bb;
+}
+
+.quantity-picker .btn-more{
+    background-color: #b9b9b9;
+}
+
+.quantity-picker .btn-more:hover{
+    background-color: #9e9e9ede;
+}
+
+.quantity-picker p{
+    font-size: 1.3rem;
+    transform: translateY(-3px);
+    font-weight: 700;
+}
+
+/* btn btn-primary btn-sm */

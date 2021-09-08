@@ -1,0 +1,14 @@
+.footer{
+    padding: 8px 20px;
+    text-align: center;
+    color: white;
+    background-color: #333;
+}
+
+.footer h5,h6{
+    margin: 0;
+}
+
+.footer h6{
+    font-size: .6rem;
+}
