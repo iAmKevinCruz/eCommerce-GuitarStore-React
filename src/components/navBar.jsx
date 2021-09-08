@@ -4,6 +4,7 @@ function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
+        <img className="logo" src="/img/logo.png" alt="" />
         <a className="navbar-brand" href="/#">
           Mad Strings
         </a>
