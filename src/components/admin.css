@@ -1,0 +1,7 @@
+.admin-page .form{
+    width: 50%;
+}
+
+.admin-page .input-field label{
+    text-align: left;
+}

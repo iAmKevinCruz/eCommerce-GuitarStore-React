@@ -1,0 +1,84 @@
+.item{
+    border: 1px solid #ccc9c9;
+    border-radius: 5px;
+    background-color: var(--item-background);
+    width: 250px;
+    height: auto;
+    padding: 5px;
+    margin-right: 12px;
+    margin-bottom: 15px;
+    transition: border .25s ease-in-out;
+    box-shadow: -1px 1px 3px 0 #c5c5c5;
+}
+
+.jiggle:hover{
+    animation-name: jiggle;
+    animation-duration: .2s;
+    animation-iteration-count: 1;
+}
+@keyframes jiggle {
+    33%  {transform: rotate(.0025turn);}
+    66%  {transform: rotate(-.0025turn);}
+}
+
+.item img{
+    width: 230px;
+    transition: transform .125s ease-in-out;
+}
+
+.item .price-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.item .price{
+    font-size: 2rem;
+    color: var(--price-color);
+    font-weight: 700;
+}
+
+.item .total{
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    opacity: .8;
+    padding: 0 2px;
+
+}
+
+@media (max-width: 414px) {
+    .item {
+        width: 100%;
+        padding: 5px 5%;
+    }
+    .item img{
+        width: 85%;
+    }
+}
+
+.item:hover{
+    border: 1px solid var(--price-color);
+}
+
+.item:hover img{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.item .img{
+    overflow: hidden;
+}
+
+.item p{
+    margin-bottom: 0;
+}
+
+.item .item-controls{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30px 0 30px;
+}

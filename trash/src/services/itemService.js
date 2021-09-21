@@ -7,7 +7,6 @@ var data = [
     image: "classical-01.jpg",
     discount: 10,
     minimum: 1,
-    stock: 5,
   },
   {
     _id: "002",
@@ -17,7 +16,6 @@ var data = [
     image: "accoustic-03.webp",
     discount: 3,
     minimum: 1,
-    stock: 7,
   },
   {
     _id: "003",
@@ -27,7 +25,6 @@ var data = [
     image: "accoustic-02.webp",
     discount: 3,
     minimum: 1,
-    stock: 2,
   },
   {
     _id: "004",
@@ -37,7 +34,6 @@ var data = [
     image: "strat-01.webp",
     discount: 3,
     minimum: 1,
-    stock: 4,
   },
   {
     _id: "005",
@@ -47,7 +43,6 @@ var data = [
     image: "strat-02.webp",
     discount: 3,
     minimum: 1,
-    stock: 9,
   },
   {
     _id: "006",
@@ -57,7 +52,6 @@ var data = [
     image: "double-kneck.webp",
     discount: 10,
     minimum: 1,
-    stock: 2,
   },
   {
     _id: "007",
@@ -67,7 +61,6 @@ var data = [
     image: "tele-01.webp",
     discount: 10,
     minimum: 1,
-    stock: 4,
   },
   {
     _id: "008",
@@ -77,7 +70,6 @@ var data = [
     image: "strat-03.webp",
     discount: 3,
     minimum: 1,
-    stock: 6,
   },
   {
     _id: "009",
@@ -87,7 +79,6 @@ var data = [
     image: "hollow.webp",
     discount: 10,
     minimum: 1,
-    stock: 7,
   },
 ];
 

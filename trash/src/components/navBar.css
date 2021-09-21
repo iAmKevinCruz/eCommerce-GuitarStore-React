@@ -1,0 +1,17 @@
+.navbar .logo{
+    width: 56px;
+    margin: 0 8px 0 0;
+    transition: transform .4s ease-in-out;
+}
+
+.navbar .container-fluid img:hover{
+    transform: rotateY(360deg);
+}
+
+.navBar{
+    background-color: #eee;
+}
+
+.navBar h3{
+    color: blue;
+}
