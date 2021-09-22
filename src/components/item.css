@@ -26,6 +26,11 @@
     transition: transform .125s ease-in-out;
 }
 
+.item:hover img{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
 .item .price-box{
     display: flex;
     flex-direction: column;
@@ -63,10 +68,6 @@
     border: 1px solid var(--price-color);
 }
 
-.item:hover img{
-    transform: scale(1.1);
-    overflow: hidden;
-}
 
 .item .img{
     overflow: hidden;

@@ -6,7 +6,7 @@ const Home = () => {
     <div className="home-page">
       <div className="top-banner">
         <div className="top-banner-text">
-          <h1 className="display-1">Mad Strings</h1>
+          <h1 className="">Mad Strings</h1>
           <h3>Where you're fingers come to be happy</h3>
         </div>
 
