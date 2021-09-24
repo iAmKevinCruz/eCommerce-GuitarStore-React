@@ -37,6 +37,8 @@ const CartItem = (props) => {
   );
 };
 
+// test change sdfgsdfgsfgsdfgasdfasfad
+// adfadf
 export default CartItem;
 
 // string.charAt(0).toUpperCase() + string.slice(1)
