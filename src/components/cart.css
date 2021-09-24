@@ -1,0 +1,11 @@
+.cart-page img {
+    /* width: 40%; */
+}
+
+.cart-page .cart-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 auto; */
+}

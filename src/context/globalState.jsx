@@ -10,9 +10,9 @@ const GlobalState = (props) => {
   });
 
   const addToCart = (product) => {
-    // console.log("adding to cart: ", product);
     let copy = [...cart];
     let found = false;
+
     for (let i = 0; i < copy.length; i++) {
       let prod = copy[i];
       if (product._id === prod._id) {
@@ -21,10 +21,12 @@ const GlobalState = (props) => {
         console.log("found it");
       }
     }
+
     if (!found) {
       console.log("adding this new item to cart");
       copy.push(product);
     }
+
     console.log(copy);
     setCart(copy);
   };
