@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./catalog.css";
 import Item from "./item";
 import ItemService from "../services/itemService";
@@ -10,9 +11,9 @@ const Catalog = () => {
   let [categories, setCategories] = useState([]);
 
   // logic (fns)
-  const retrieveCatalog = () => {
+  const retrieveCatalog = async () => {
     let service = new ItemService();
-    let cat = service.getCatalog();
+    let cat = await service.getCatalog();
     setProducts(cat);
     setDisplayItems(cat);
     console.log(cat);

@@ -1,5 +1,6 @@
 import "./admin.css";
 import { useState } from "react";
+import ItemService from "../services/itemService";
 
 const Admin = () => {
   const [product, setProduct] = useState({});
@@ -15,7 +16,15 @@ const Admin = () => {
   };
 
   const btnSubmit = () => {
-    console.log(product);
+    let copy = { ...product };
+    copy.price = parseFloat(copy.price);
+    copy.discount = parseFloat(copy.discount);
+    copy.stock = +copy.stock;
+    copy.minimum = copy.minimum * 1;
+
+    let post = new ItemService();
+    post.saveItem(copy);
+    console.log(copy);
   };
 
   return (

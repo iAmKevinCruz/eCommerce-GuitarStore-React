@@ -32,7 +32,16 @@ const GlobalState = (props) => {
   };
 
   const removeFromCart = (productId) => {
-    console.log("removing: ", productId);
+    let newCart = [...cart];
+    for (let i = 0; i < newCart.length; i++) {
+      let prod = newCart[i];
+      if (prod._id === productId) {
+        newCart.splice(i, 1);
+        break; //end for the loop
+      }
+    }
+    setCart(newCart);
+    console.log(newCart);
   };
 
   return (

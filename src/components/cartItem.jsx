@@ -1,9 +1,18 @@
+import { useContext } from "react/cjs/react.development";
+import storeContext from "../context/storeContext";
 import "./cartItem.css";
 
 const CartItem = (props) => {
+  const removeFromCart = useContext(storeContext).removeProductFromCart;
+
   const getTotal = () => {
     let total = props.data.quantity * props.data.price;
     return total.toFixed(2);
+  };
+
+  const removeItem = (event) => {
+    console.log(props.data._id);
+    removeFromCart(props.data._id);
   };
 
   return (
@@ -30,15 +39,15 @@ const CartItem = (props) => {
         <h6>Total</h6>
         <h6>$ {getTotal()}</h6>
       </div>
-      <div className="cart-del-btn ms-3 col-1">
-        <buttton className="btn btn-danger btn-sm">Delete</buttton>
+      <div className="cart-del-btn col-1">
+        <buttton onClick={removeItem} className="btn btn-outline-danger btn-sm">
+          Remove
+        </buttton>
       </div>
     </div>
   );
 };
 
-// test change sdfgsdfgsfgsdfgasdfasfad
-// adfadf
 export default CartItem;
 
 // string.charAt(0).toUpperCase() + string.slice(1)
